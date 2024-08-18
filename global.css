@@ -1,0 +1,108 @@
+/* Импорты шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background: #141414;
+    border-bottom: 1px solid rgba(41, 28, 28, 0.521);
+    font-size: 10.5pt;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: 0 20px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.nav-links-desktop {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    left: -1.2%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-links-desktop a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18pt;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    margin: 0 30px;
+}
+
+.nav-links-desktop a:hover {
+    color: #918d8d;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+@media (max-width: 720px) {
+    .nav-bar {
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links-desktop {
+        display: none;
+    }
+
+    .nav-links-mobile {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        top: 55px;
+        left: 0;
+        background: #141414;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        z-index: 4;
+    }
+
+    .nav-links-mobile.active {
+        display: flex;
+        position: block;
+        margin-top: 0;
+    }
+
+    .nav-links-mobile a {
+        color: #fff;
+        display: block;
+        position: relative;
+        margin-left: -16%;
+        text-decoration: none;
+        padding: 15px;
+        font-size: 14pt;
+        border-bottom: 1px solid rgba(41, 28, 28, 0.521);
+    }
+}
+
+@media (max-width: 340px) {
+    .block {
+        width: 280px;
+    }
+
+    .disc i {
+        width: 230px;
+    }
+}

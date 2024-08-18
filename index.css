@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #fff;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+    margin: 9px;
+}
+
+.wrapper {
+    width: 100%;
+    background: linear-gradient(45deg, #8bb3a0, #ad70b9);
+    min-height: 100%;
+    padding: 150px 0 50px;
+}
+
+.block {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background: #dfd7d7;
+    border-radius: 34px;
+    padding: 50px 0;
+}
+
+.block .img-holder img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    background: linear-gradient(90deg, #b3aab9, #bad2bf);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-holder img:hover {
+    transform: scale(1.03);
+}
+
+.block h3 {
+    font-weight: 400;
+    font-size: 23px;
+    color: #56595c;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.block p {
+    color: #6c7174;
+    margin: 30px 0 20px;
+    padding: 2px;
+    font-weight: 450;
+}
+
+.disc i {
+    display: block;
+    width: 100%;
+    margin: auto;
+    line-height: 1.5;
+    padding-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.block .social {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 20% auto 0;
+}
+
+.block .social a {
+    display: block;
+    border: 1px solid #eaeaec;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+.block .social a:hover {
+    transform: translateY(-15px);
+}
+
+.block .social a.github:hover {
+    background: black;
+    border-color: black;
+}
+
+.block .social a.telegram:hover {
+    background: #40B3E0;
+    border-color: #40B3E0;
+}
+
+.block .social a.vk:hover {
+    background: #3b5999;
+    border-color: #3b5999;
+}
+
+.bottom-text {
+    text-align: center;
+    color: #c4bec4;
+    margin-top: 100px;
+}
